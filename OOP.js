@@ -10,7 +10,7 @@ class Payment {
 
 // 2. Add methods to the class
     getSummary () {
-        return (`The payment information is as follows: ${this.payerName}, ${this.amount}, and ${this.method}`)
+        return (`The payment information is as follows: ${this.payerName}, ${this.amount}, and ${this.method}.`)
     }
     isLargePayment() {
         let isLarge
@@ -29,6 +29,6 @@ let payment1 = new Payment ("Alice", "5", "Credit Card", "January 2nd")
 let payment2 = new Payment ("John", "65", "Paypal", "February 14th")
 let payment3 = new Payment ("Sarah", "120", "Cash", "April 10th")
 
-console.log (payment1)
-console.log (payment2)
-console.log (payment3)
+console.log (payment1.getSummary())
+console.log (payment2.getSummary())
+console.log (payment3.isLargePayment())
