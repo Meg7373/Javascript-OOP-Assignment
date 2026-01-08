@@ -10,7 +10,7 @@ class Payment {
 
 // 2. Add methods to the class
     getSummary () {
-        return (`The payment information is as follows: ${this.pa}, ${this.amount}, and ${this.method}`)
+        return (`The payment information is as follows: ${this.payerName}, ${this.amount}, and ${this.method}`)
     }
     isLargePayment() {
         let isLarge
